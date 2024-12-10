@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manitas de Tu Hogar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 0.5rem 0;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x600');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+            .hero h1 {
+                margin: 0;
+                font-size: 3rem;
+            }
+
+            .hero p {
+                margin: 1rem 0;
+                font-size: 1.5rem;
+            }
+
+        .services {
+            padding: 2rem;
+            text-align: center;
+        }
+
+            .services h2 {
+                color: #333;
+            }
+
+        .service-item {
+            display: inline-block;
+            width: 30%;
+            margin: 1rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+            .service-item img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .service-item h3 {
+                color: #0073e6;
+                margin: 0.5rem 0;
+            }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #005bb5;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manitas de Tu Hogar</h1>
+        <p>Soluciones rápidas y efectivas para tu hogar</p>
+    </header>
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <form method="get" asp-controller="Home" asp-action="Contacto">
+            <button type="submit" class="btn btn-primary">Contacta con Nosotros</button>
+        </form>
+       
+    </nav>
+    <section class="hero">
+        <h1>Arreglos Domésticos Profesionales</h1>
+        <p>Aires acondicionados, electricidad, fontanería, pintura, y más</p>
+    </section>
+    <section class="services" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-item">           
+            <img src="aireacondicionado.png" alt="Aire acondicionado de piso" style="width:100%; max-width:600px;">
+            <h3>Aires Acondicionados</h3>
+            <p>Instalación, reparación y mantenimiento.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/300" alt="Electricidad">
+            <h3>Electricidad</h3>
+            <p>Reparaciones, instalación de sistemas y más.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/300" alt="Fontanería">
+            <h3>Fontanería</h3>
+            <p>Soluciones a fugas, instalación de tuberías y grifería.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://via.placeholder.com/300" alt="Pintura">
+            <h3>Pintura</h3>
+            <p>Renueva tus espacios con nuestros expertos pintores.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Manitas de Tu Hogar. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+﻿/* Aplica el diseño a toda la página */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenido principal ocupa todo el espacio disponible */
+/*.content {
+    flex: 1;
+    padding: 1rem;
+}*/
+.content {
+    flex: 2; /* Expande el contenido para ocupar el espacio disponible */
+    padding: 1rem;
+    background-color: #f4f4f4; /* Fondo opcional */
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 150px; /* Ajusta la altura del logo */
+    width: auto;
+}
+
+.logo-container h1 {
+    margin-left: 10px; /* Espacio entre el logo y el título */
+    font-size: 14rem; /* Tamaño de letra del título */
+    color: #0073e6; /* Color del título */
+}
+
+.custom-title {
+    font-size: 2.5rem; /* Ajusta el tamaño que prefieras */
+    margin-left: 10px; /* Añade espacio entre el logo y el título */
+    color: #0073e6; /* Cambia el color si es necesario */
+}
+
+.main-title {
+    font-size: 2.5rem; /* Tamaño del título principal */
+    color: #0073e6;
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.subtitle {
+    font-size: 2rem; /* Tamaño del subtítulo */
+    color: #555; /* Color del subtítulo */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.menu-button {
+    font-size: 1.2rem; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    background-color: #0073e6; /* Color de fondo */
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Elimina el subrayado */
+    margin: 0 10px; /* Espaciado entre botones */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.menu-button:hover 
+{
+    background-color: #005bb5; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Asegura que el texto siga siendo visible */
+}
+
+.menu-button:active
+{
+    background-color: #004a99; /* Color de fondo al hacer clic */
+}
+
+.header 
+{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .logo-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-container img
+{
+    height: 60px;
+    width: auto;
+}
+
+.header .titles
+{
+    margin-left: 10px;
+}
+
+.main-title {
+    font-size: 2rem;
+    color: #0073e6;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Contenido Principal */
+.section-title {
+    font-size: 2.3rem;
+    color: #333;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+/* Contenido Principal */
+.section-title-cookies
+{
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.services-list {
+    list-style-type: disc;
+    margin: 2rem auto;
+    padding: 0;
+    max-width: 600px;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Pie de Página */
+.footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: black;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño máximo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Ajusta el contenido sin deformar la imagen */
+    border-radius: 8px; /* Opcional: para redondear las esquinas */
+}
+
+
